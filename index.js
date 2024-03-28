@@ -60,19 +60,19 @@ const orderItem = document.createElement('li');
     // Set the text content of the list item to the item name
     orderItem.textContent = itemName;
     // Append the list item to the order items list
-    orderList.appendChild = (orderItem);
+    orderList.appendChild(orderItem);
     // Calculate and update the total price
-    const currentTotal = parseFloat(orderTotalElem.textContent);
+    const currentTotal = parseFloat(orderTotal.textContent);
     const itemPrice = 10; // Assuming each item costs $10 (you can customize this)
     const newTotal = currentTotal + itemPrice;
     // Update the text content of the order total element with the new total
-    orderTotalElem.textContent = newTotal.toFixed(2);
+    orderTotal.textContent = newTotal.toFixed(2);
 }
 
 // Function to initialize the menu system
 function initMenuSystem(menu) {
     // Call the function to display menu items
-    displayMenuItems(menu);
+    displayMenuItems(menu)
 }
 
 // Start the menu system by calling the init function
